@@ -22,7 +22,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Allows you to parse vCard files and text blocks, and get back an array
 of the elements of each vCard in the file or text.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Klasa pozwala na analizowanie plików i bloków tekstu vCard i pobranie
