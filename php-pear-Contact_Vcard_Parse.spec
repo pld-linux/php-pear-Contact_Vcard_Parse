@@ -4,7 +4,7 @@
 %define         _class          Contact_Vcard_Parse
 %define		_status		stable
 %define		_pearname	%{_class}
-Summary:	%{_pearname} - Parse vCard 2.1 and 3.0 files. 
+Summary:	%{_pearname} - Parse vCard 2.1 and 3.0 files.
 Name:		php-pear-%{_pearname}
 Version:	1.2
 Release:	1
@@ -18,9 +18,9 @@ Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%description 
-Allows you to parse vCard files and text blocks, and get back an array of the
-elements of each vCard in the file or text.
+%description
+Allows you to parse vCard files and text blocks, and get back an array
+of the elements of each vCard in the file or text.
 
 This class has in PEAR status: %{_status}.
 
