@@ -1,9 +1,9 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          Contact_Vcard_Parse
+%define		_class		Contact_Vcard_Parse
 %define		_status		stable
 %define		_pearname	%{_class}
 
-Summary:	%{_pearname} - Parse vCard 2.1 and 3.0 files
+Summary:	%{_pearname} - parse vCard 2.1 and 3.0 files
 Summary(pl):	%{_pearname} - analiza plików vCard 2.1 i 3.0
 Name:		php-pear-%{_pearname}
 Version:	1.30
