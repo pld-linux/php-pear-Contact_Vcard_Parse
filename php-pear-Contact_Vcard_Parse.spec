@@ -2,15 +2,16 @@
 %define         _class          Contact_Vcard_Parse
 %define		_status		stable
 %define		_pearname	%{_class}
+
 Summary:	%{_pearname} - Parse vCard 2.1 and 3.0 files
 Summary(pl):	%{_pearname} - analiza plików vCard 2.1 i 3.0
 Name:		php-pear-%{_pearname}
-Version:	1.2
+Version:	1.30
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-# Source0-md5:	b016ff097b5ee0b89da393af187c3843
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	963c5bc763accbd0580271a715a692a6
 URL:		http://pear.php.net/package/Contact_Vcard_Parse/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
