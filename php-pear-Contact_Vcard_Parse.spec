@@ -1,10 +1,9 @@
-# ToDo:
-#  - pl summary/description
 %include	/usr/lib/rpm/macros.php
 %define         _class          Contact_Vcard_Parse
 %define		_status		stable
 %define		_pearname	%{_class}
-Summary:	%{_pearname} - Parse vCard 2.1 and 3.0 files.
+Summary:	%{_pearname} - Parse vCard 2.1 and 3.0 files
+Summary(pl):	%{_pearname} - analiza plików vCard 2.1 i 3.0
 Name:		php-pear-%{_pearname}
 Version:	1.2
 Release:	1
@@ -24,6 +23,12 @@ of the elements of each vCard in the file or text.
 
 This class has in PEAR status: %{_status}.
 
+%description -l pl
+Klasa pozwala na analizowanie plików i bloków tekstu vCard i pobranie
+tablicy elementów z ka¿dego vCard w pliku lub tek¶cie.
+
+Ta klasa ma w PEAR status: %{_status}.
+
 %prep
 %setup -q -c
 
@@ -38,4 +43,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%dir %{php_pear_dir}/%{_class}
 %{php_pear_dir}/%{_class}/*.php
