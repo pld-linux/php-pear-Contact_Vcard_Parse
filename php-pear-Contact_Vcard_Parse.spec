@@ -4,7 +4,7 @@
 %define		_pearname	%{_class}
 
 Summary:	%{_pearname} - parse vCard 2.1 and 3.0 files
-Summary(pl):	%{_pearname} - analiza plik體 vCard 2.1 i 3.0
+Summary(pl.UTF-8):   %{_pearname} - analiza plik贸w vCard 2.1 i 3.0
 Name:		php-pear-%{_pearname}
 Version:	1.31.0
 Release:	1
@@ -27,15 +27,15 @@ of the elements of each vCard in the file or text.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Klasa pozwala na analizowanie plik體 i blok體 tekstu vCard i pobranie
-tablicy element體 z ka縟ego vCard w pliku lub tek禼ie.
+%description -l pl.UTF-8
+Klasa pozwala na analizowanie plik贸w i blok贸w tekstu vCard i pobranie
+tablicy element贸w z ka偶dego vCard w pliku lub tek艣cie.
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
@@ -44,7 +44,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
