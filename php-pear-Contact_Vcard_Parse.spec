@@ -7,7 +7,7 @@ Summary:	%{_pearname} - parse vCard 2.1 and 3.0 files
 Summary(pl.UTF-8):	%{_pearname} - analiza plików vCard 2.1 i 3.0
 Name:		php-pear-%{_pearname}
 Version:	1.31.0
-Release:	1
+Release:	2
 Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
