@@ -6,13 +6,13 @@
 Summary:	%{_pearname} - parse vCard 2.1 and 3.0 files
 Summary(pl.UTF-8):	%{_pearname} - analiza plików vCard 2.1 i 3.0
 Name:		php-pear-%{_pearname}
-Version:	1.31.0
-Release:	2
+Version:	1.32.0
+Release:	1
 Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	d03d91831b85fbd467f9bf6366b3481e
+# Source0-md5:	d4a305d49434e05c7d7022c5d12faaab
 URL:		http://pear.php.net/package/Contact_Vcard_Parse/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -38,8 +38,8 @@ Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
-AutoReq:	no
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
@@ -62,7 +62,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc install.log
 %{php_pear_dir}/.registry/*.reg
-%{php_pear_dir}/*.php
+%{php_pear_dir}/%{_class}.php
+%dir %{php_pear_dir}/Contact/Vcard
+%{php_pear_dir}/Contact/Vcard/Parse.php
 
 %files tests
 %defattr(644,root,root,755)
