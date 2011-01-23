@@ -18,6 +18,7 @@ BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-pear
+Obsoletes:	php-pear-Contact_Vcard_Parse-tests
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -32,20 +33,6 @@ Klasa pozwala na analizowanie plików i bloków tekstu vCard i pobranie
 tablicy elementów z każdego vCard w pliku lub tekście.
 
 Ta klasa ma w PEAR status: %{_status}.
-
-%package tests
-Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
-Group:		Development/Languages/PHP
-Requires:	%{name} = %{epoch}:%{version}-%{release}
-AutoProv:	no
-AutoReq:	no
-
-%description tests
-Tests for PEAR::%{_pearname}.
-
-%description tests -l pl.UTF-8
-Testy dla PEAR::%{_pearname}.
 
 %prep
 %pear_package_setup
@@ -65,7 +52,3 @@ rm -rf $RPM_BUILD_ROOT
 %{php_pear_dir}/%{_class}.php
 %dir %{php_pear_dir}/Contact/Vcard
 %{php_pear_dir}/Contact/Vcard/Parse.php
-
-%files tests
-%defattr(644,root,root,755)
-%{php_pear_dir}/tests/*
